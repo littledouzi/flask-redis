@@ -13,3 +13,9 @@ jobs:
       -
         name: list docker image
         run: docker image ls
+      - 
+        name: dockerhub login
+        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME}} -p ${{ secrets.DOCKERHUB_PASSWORD }}
+      -
+        name: docker image push
+        run: docker image push littledouzi/flask-redis:latest
