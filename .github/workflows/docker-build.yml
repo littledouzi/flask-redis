@@ -21,4 +21,3 @@ jobs:
         uses: docker/bake-action@master
         with:
           push: truet
-          tags: littledouzi/flask-redis:1.1
