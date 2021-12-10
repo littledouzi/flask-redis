@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       -
         name: docker image build
-        run: docker image build -t littledouzi/flask-redis:latest
+        run: docker image build -t littledouzi/flask-redis:latest .
       -
         name: list docker image
         run: docker image ls
